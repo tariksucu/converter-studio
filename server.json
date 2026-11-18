@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "studio.converter/converter-studio",
+  "title": "Converter Studio",
+  "description": "Convert video, audio, images, PDFs and documents in 67 formats; results come back as links.",
+  "version": "1.0.0",
+  "websiteUrl": "https://converter.studio/developers",
+  "repository": {
+    "url": "https://github.com/tariksucu/converter-studio",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://converter.studio/downloads/store/icon-256.png",
+      "mimeType": "image/png",
+      "sizes": ["256x256"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://converter.studio/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer and your Converter Studio API key (create one at https://converter.studio/account#api-keys)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

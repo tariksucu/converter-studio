@@ -1,0 +1,22 @@
+{
+  "name": "converter-studio",
+  "version": "1.0.0",
+  "description": "Convert video, audio, images, PDFs and documents in 67 formats; results come back as links.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "converter-studio": {
+      "httpUrl": "https://converter.studio/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${CONVERTER_STUDIO_API_KEY}"
+      }
+    }
+  },
+  "settings": [
+    {
+      "name": "API key",
+      "description": "Your Converter Studio API key (https://converter.studio/account#api-keys)",
+      "envVar": "CONVERTER_STUDIO_API_KEY",
+      "sensitive": true
+    }
+  ]
+}

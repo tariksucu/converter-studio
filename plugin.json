@@ -37,7 +37,8 @@
           "Compress this PDF"
         ],
         "brandColor": "#FF5418",
-        "logo": "https://converter.studio/downloads/store/icon-256.png"
+        "logo": "./assets/icon.png",
+        "composerIcon": "./assets/icon.svg"
       }
     }
   }

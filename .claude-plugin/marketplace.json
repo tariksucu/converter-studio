@@ -1,6 +1,6 @@
 {
   "name": "converter-studio",
-  "description": "Converter Studio: convert files between 67 formats from Claude Code (MCP server and skill).",
+  "description": "Converter Studio: convert files between 67 formats from Claude Code (MCP server and skills).",
   "owner": {
     "name": "Converter Studio",
     "email": "support@converter.studio"
@@ -9,8 +9,8 @@
     {
       "name": "converter-studio",
       "source": "./",
-      "description": "Convert files between 67 formats (video, audio, images, PDFs, documents, e-books, subtitles, archives) with Converter Studio: an MCP server plus a skill.",
-      "version": "1.0.0",
+      "description": "Convert files between 67 formats (video, audio, images, PDFs, documents, e-books, subtitles, archives) with Converter Studio: an MCP server plus skills for single files, whole folders, web-ready media and audio extraction.",
+      "version": "1.1.0",
       "homepage": "https://converter.studio/developers"
     }
   ]

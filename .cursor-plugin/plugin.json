@@ -1,0 +1,36 @@
+{
+  "name": "converter-studio",
+  "displayName": "Converter Studio",
+  "version": "1.1.1",
+  "description": "Convert files between 67 formats (video, audio, images, PDFs, documents, e-books, subtitles, archives) with Converter Studio: an MCP server plus skills for single files, whole folders, web-ready media and audio extraction.",
+  "author": {
+    "name": "Converter Studio",
+    "email": "support@converter.studio"
+  },
+  "homepage": "https://converter.studio/developers",
+  "repository": "https://github.com/tariksucu/converter-studio",
+  "license": "MIT",
+  "keywords": [
+    "file-converter",
+    "video-converter",
+    "image-converter",
+    "pdf",
+    "audio",
+    "mcp",
+    "converter-studio"
+  ],
+  "logo": "assets/icon.svg",
+  "skills": "./skills/",
+  "mcpServers": "./.cursor-plugin/mcp.json",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "CONVERTER_STUDIO_API_KEY": {
+        "type": "string",
+        "title": "Converter Studio API key",
+        "description": "Create a key at https://converter.studio/account#api-keys (it starts with cvs_live_). Free accounts get 13 credits a day."
+      }
+    },
+    "required": ["CONVERTER_STUDIO_API_KEY"]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "converter-studio": {
+      "url": "https://converter.studio/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${CONVERTER_STUDIO_API_KEY}"
+      }
+    }
+  }
+}

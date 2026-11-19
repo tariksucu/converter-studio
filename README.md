@@ -4,7 +4,11 @@
 
 - an **MCP server** at `https://converter.studio/api/mcp` (Streamable HTTP),
 - a **plugin** for Claude Code and Codex, an **extension** for Gemini CLI,
-- an **Agent Skill** (`skills/convert-files`) that uses the MCP tools when connected, and local ffmpeg, ImageMagick or LibreOffice commands otherwise.
+- four **Agent Skills** that use the MCP tools when connected, and local ffmpeg, ImageMagick, cwebp or LibreOffice commands otherwise:
+  - `convert-files`: one file to another format;
+  - `batch-convert`: a whole folder, one target format per file type;
+  - `web-ready-media`: images to WebP/AVIF in responsive sizes, videos to streaming-friendly MP4/WebM with a poster;
+  - `extract-audio`: the sound of a video as MP3, M4A, WAV or FLAC (cut, evened out, or ready for transcription), and its subtitles as SRT.
 
 Give the assistant a link or a file; it gets back a download link, valid for 6 hours.
 
@@ -18,7 +22,7 @@ export CONVERTER_STUDIO_API_KEY=cvs_live_...
 
 ## 2. Connect
 
-**Claude Code** (plugin with the MCP server and the skill):
+**Claude Code** (plugin with the MCP server and the skills):
 
 ```bash
 claude plugin marketplace add tariksucu/converter-studio
@@ -63,4 +67,4 @@ Files are used only to convert them. Uploads are deleted after the conversion an
 
 ## License
 
-The files in this repository (plugin, extension and skill) are MIT-licensed. Converter Studio itself is a hosted service.
+The files in this repository (plugin, extension and skills) are MIT-licensed. Converter Studio itself is a hosted service.

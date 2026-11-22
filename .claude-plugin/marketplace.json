@@ -10,7 +10,7 @@
       "name": "converter-studio",
       "source": "./",
       "description": "Convert files between 67 formats (video, audio, images, PDFs, documents, e-books, subtitles, archives) with Converter Studio: an MCP server plus skills for single files, whole folders, web-ready media and audio extraction.",
-      "version": "1.1.1",
+      "version": "1.1.2",
       "homepage": "https://converter.studio/developers"
     }
   ]

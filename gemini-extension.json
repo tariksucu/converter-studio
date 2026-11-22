@@ -1,6 +1,6 @@
 {
   "name": "converter-studio",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Convert video, audio, images, PDFs and documents in 67 formats; results come back as links.",
   "contextFileName": "GEMINI.md",
   "mcpServers": {
